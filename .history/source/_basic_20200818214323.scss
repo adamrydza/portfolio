@@ -1,0 +1,22 @@
+html {
+    font-family: $fontPoppins;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.site__arrowTop {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    a {
+        .fa-chevron-up {
+            color: #fff;
+            background: $colorBlue;
+            font-size: 26px;
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            border: 2px solid #fff;
+        }
+    }
+}

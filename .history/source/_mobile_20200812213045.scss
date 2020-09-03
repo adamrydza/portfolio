@@ -1,0 +1,40 @@
+@media screen and (max-width: 780px) {
+    .navbar {
+        .navbar__logo {
+            .navbar__logoIcon {
+                width: 65px;
+            }
+        }
+        .navbar__list {
+            .navbar__listItem {
+                .navbar__listLink {
+                    font-size: $fontSize22;
+                }
+            }
+        }
+    }
+    .content-header {
+        .content-header__textSmall {
+            color: $colorGray;
+            font-weight: $fontw300;
+            font-size: $fontSize22;
+        }
+        .content-header__textBig {
+            color: $colorBlue;
+            font-size: 46px;
+            font-weight: 500;
+            margin: 10px 0px;
+            letter-spacing: 1mm;
+        }
+        .content-header__arrow {
+            margin-top: 100px;
+            height: 100px;
+            .fa-chevron-down {
+                color: $colorBlue;
+                font-size: 46px;
+                -webkit-animation: arrowDown 1s infinite ease-in-out;
+                animation: arrowDown 1s infinite ease-in-out;
+            }
+        }
+    }
+}

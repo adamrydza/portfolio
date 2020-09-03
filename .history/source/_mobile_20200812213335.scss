@@ -1,0 +1,42 @@
+@media(max-width: 780px) {
+    .navbar {
+        padding: 20px;
+        .navbar__logo {
+            .navbar__logoIcon {
+                width: 45px;
+            }
+        }
+        .navbar__list {
+            .navbar__listItem {
+                margin: 15px 0px;
+                .navbar__listLink {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .content-header {
+        .content-header__textSmall {
+            color: $colorGray;
+            font-weight: $fontw300;
+            font-size: $fontSize22;
+        }
+        .content-header__textBig {
+            color: $colorBlue;
+            font-size: 46px;
+            font-weight: 500;
+            margin: 10px 0px;
+            letter-spacing: 1mm;
+        }
+        .content-header__arrow {
+            margin-top: 100px;
+            height: 100px;
+            .fa-chevron-down {
+                color: $colorBlue;
+                font-size: 46px;
+                -webkit-animation: arrowDown 1s infinite ease-in-out;
+                animation: arrowDown 1s infinite ease-in-out;
+            }
+        }
+    }
+}

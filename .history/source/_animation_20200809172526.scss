@@ -1,0 +1,23 @@
+@-webkit-keyframes arrowDown {
+
+	0% {
+        padding-top: 0px;
+        opacity: 1;
+	}
+	100% {
+        padding-top: 50px;
+        opacity: 0;
+    }
+}
+
+@keyframes arrowDown {
+
+	0% {
+        padding-top: 0px;
+        opacity: 1;
+	}
+	100% {
+        padding-top: 50px;
+        opacity: 0;
+    }
+}
