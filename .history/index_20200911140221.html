@@ -314,7 +314,7 @@
                         <br><br>
             
                         <p>Message</p>
-                        <textarea id="body" rows="5" placeholder="Type Message"></textarea><!--textarea tag should be closed (In this coding UI textarea close tag cannot be used)-->
+                        <textarea id="body" rows="5" placeholder="Type Message"><textarea><!--textarea tag should be closed (In this coding UI textarea close tag cannot be used)-->
                         <br><br>
             
                         <button type="button" onclick="sendEmail()" value="Send An Email">Submit</button> 
@@ -329,13 +329,45 @@
     </div>
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="js/form.js"></script>
     <script src="js/all.js"></script>
     <script src="js/scroll-menu.js"></script>
     <script src="js/active-link.js"></script>
     <script src="js/mobile.js"></script>
     <script src="js/contact.js"></script>
     <script src="js/swiper.js"></script>
+    <script type="text/javascript">
+        function sendEmail() {
+            var name = $("#name");
+            var email = $("#email");
+            var body = $("#body");
+
+            if (isNotEmpty(name) && isNotEmpty(email) && isNotEmpty(body)) {
+                $.ajax({
+                   url: 'sendEmail.php',
+                   method: 'POST',
+                   dataType: 'json',
+                   data: {
+                       name: name.val(),
+                       email: email.val(),
+                       body: body.val()
+                   }, success: function (response) {
+                        $('#myForm')[0].reset();
+                        $('.sent-notification').text("Message Sent Successfully.");
+                   }
+                });
+            }
+        }
+
+        function isNotEmpty(caller) {
+            if (caller.val() == "") {
+                caller.css('border', '1px solid red');
+                return false;
+            } else
+                caller.css('border', '');
+
+            return true;
+        }
+    </script>
     <script>
         var swiper = new Swiper('.swiper-container', {
           direction: 'vertical',
