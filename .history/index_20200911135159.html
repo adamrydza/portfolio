@@ -300,7 +300,7 @@
         <div class="contact__content">
             <div class="contact__form">
                 <h4 class="sent-notification"></h4>
-                <form class="form" id="myForm" method="post" data-netlify="true">
+                <form class="form" id="contactForm" method="post" data-netlify="true">
                     <div class="form-row">
                         <label for="name">Imię (min. 3 znaki)*</label>
                         <input type="text" id="name" name="name" required pattern=.{3,} id="name" data-error-text="Wypełnij to pole" placeholder="Wpisz swoje imię...">
@@ -314,7 +314,7 @@
                         <textarea name="message" id="body" required data-error-text="Musisz wypełnić pole" id="message" placeholder="Napisz wiadomość..."></textarea>
                     </div>
                     <div class="form-row">
-                        <button type="button" onclick="sendEmail()" class="submit-btn">
+                        <button type="submit" onclick="sendEmail()" class="submit-btn">
                             Wyślij
                         </button>
                     </div>
@@ -334,37 +334,37 @@
     <script src="js/mobile.js"></script>
     <script src="js/contact.js"></script>
     <script src="js/swiper.js"></script>
-    <script type="text/javascript">
+    <script>
         function sendEmail() {
             var name = $("#name");
             var email = $("#email");
             var body = $("#body");
 
-            if (isNotEmpty(name) && isNotEmpty(email) && isNotEmpty(body)) {
+            if(isNotEmpty(name) && isNotEmpty(email) && isNotEmpty(body)) {
                 $.ajax({
-                   url: 'sendEmail.php',
-                   method: 'POST',
-                   dataType: 'json',
-                   data: {
-                       name: name.val(),
-                       email: email.val(),
-                       body: body.val()
-                   }, success: function (response) {
-                        $('#myForm')[0].reset();
-                        $('.sent-notification').text("Message Sent Successfully.");
-                   }
-                });
+                    url: 'sendEmail.php',
+                    method: 'POST',
+                    dataType: 'json',
+                    data: {
+                        name: name.val(),
+                        email: email.val(),
+                        body: body.val()
+                    }, success: function(response) {
+                        $('#contactForm')[0].reset();
+                        $('.sent-notification').text("Wiadomość wysłana!");
+                    }
+                })
             }
         }
-
         function isNotEmpty(caller) {
-            if (caller.val() == "") {
-                caller.css('border', '1px solid red');
+            if(caller.val()==""){
+                caller.css('border','1px solid red');
                 return false;
-            } else
+            }
+            else {
                 caller.css('border', '');
-
-            return true;
+                return true;
+            }
         }
     </script>
     <script>
