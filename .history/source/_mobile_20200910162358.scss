@@ -1,0 +1,36 @@
+@media(max-width: 1300px) {
+    .contact-sec__socialOne {
+        padding-left: 100px;
+    }
+}
+
+@media(max-width: 780px) {
+    .header__navLogoBox {
+        padding-left: 30px;
+        span {
+            display: none;
+        }
+    }
+
+    .header__navMobile {
+        display: inline-block;
+    }
+
+    .header__navItemBox {
+        display: none;
+    }
+
+    .form {
+        width: 90%;
+    }
+
+    .form-send-success {
+        width: 90%;
+        text-shadow: 0px 0px 1px #000;
+    }
+
+    .send-error {
+        width: 90%;
+        text-shadow: 0px 0px 1px #000;
+    }
+}

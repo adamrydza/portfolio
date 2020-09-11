@@ -1,6 +1,6 @@
 <?php
 
-$mailToSend = "kontakt@adamrydza.pl";
+$mailToSend = "biznes.adamrydza@gmail.com";
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $name = $_POST["name"];

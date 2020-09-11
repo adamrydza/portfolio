@@ -1,0 +1,40 @@
+@media(max-width: 1300px) {
+    .contact-sec__socialOne {
+        padding-left: 100px;
+    }
+}
+
+@media(max-width: 780px) {
+    .header__navLogoBox {
+        padding-left: 30px;
+        span {
+            display: none;
+        }
+    }
+
+    .hamburger {
+        display: inline-block;
+        padding-right: 30px;
+    }
+
+    .header__navItemBox {
+        display: none;
+    }
+
+    .portfolio__one {
+        margin: 0px auto 45px auto;
+        text-align: center;
+    }
+
+    .portfolio__image {
+        width: 300px;
+        margin-bottom: 25px;
+    }
+
+    .portfolio__imageInformation {
+        width: 250px;
+        height: 120px;
+        margin-top: -184px;
+        margin-bottom: 25px;
+    }
+}

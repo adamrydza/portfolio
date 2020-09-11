@@ -1,0 +1,183 @@
+.contact {
+    
+}
+
+.contact__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    padding-bottom: 100px;
+    background: transparent;
+    .contact-sec__social {
+        min-width: 40%;
+        padding-top: 60px;
+    }
+    .contact-sec__form {
+        min-width: 40%;
+    }
+}
+
+.contact-sec__socialOne {
+    color: $darkGray;
+    background: $white;
+    font-size: 18px;
+    margin-bottom: 35px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    &:last-child {
+        margin-bottom: 0px;
+    }
+    .socialOne__icon {
+        font-size: 32px;
+        margin-right: 25px;
+        color: $lightRed;
+    }
+    a, span {
+        color: $darkGray;
+        text-decoration: none;
+    }
+}
+
+.form {
+    margin: 3rem auto;
+    font-family: $poppins;
+    max-width: 40rem;
+    .form-row {
+        margin-bottom: 1rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    input {
+        font-family: $poppins;
+        padding: 0.8rem;
+        border: 0;
+        display: block;
+        width: 100%;
+        color: #666;
+        border-radius: 10px;
+        background: $white;
+        -webkit-box-shadow: 0px 0px 15px rgba(0,0,0,0.075);
+        box-shadow: 0px 0px 15px rgba(0,0,0,0.075);
+        margin-bottom: 35px;
+    }
+    textarea {
+        font-family: $poppins;
+        padding: 0.8rem;
+        display: block;
+        border: 0;
+        width: 100%;
+        color: #666;
+        height: 10rem;
+        resize: none;
+        max-height: 350px;
+        border-radius: 10px;
+        background: $white;
+        -webkit-box-shadow: 0px 0px 15px rgba(0,0,0,0.075);
+        box-shadow: 0px 0px 15px rgba(0,0,0,0.075);
+    }
+    label {
+        display: none;
+    }
+    .submit-btn {
+        font-family: $poppins;
+        padding: 10px 45px;
+        cursor: pointer;
+        background: $lightRed;
+        color: $white;
+        border: 0;
+        border-radius: 10px;
+        font-size: 1.1rem;
+        font-weight: 500;
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            background: rgba(239,35,60, 0.8);
+            cursor: pointer;
+        }
+    }
+    input.field-error {
+        border-color: tomato;
+        outline: none;
+        -webkit-box-shadow: 0 0 0 2px rgba(255,99,71, 0.3);
+        box-shadow: 0 0 0 2px rgba(255,99,71, 0.3);
+    }
+    textarea.field-error {
+        border-color: tomato;
+        outline: none;
+        -webkit-box-shadow: 0 0 0 2px rgba(255,99,71, 0.3);
+        box-shadow: 0 0 0 2px rgba(255,99,71, 0.3);
+    }
+}
+.form-error-text {
+    color: tomato;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+.form-error-inline {
+    .form-error-text {
+        display: none;
+    }
+}
+@media screen and (max-width: 500px) {
+    .form {
+        .submit-btn {
+            display: block;
+            width: 100%;
+        }
+    }
+}
+footer {
+    color: $white;
+    background: $darkGray;
+    height: 75px;
+    margin-top: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    .fa-heart {
+        color: #f11c51;
+        margin: 0px 5px;
+    }
+    .fa-mug-hot {
+        color: #cfa186;
+        margin: 0px 5px;
+    }
+}
+
+.form-send-success {
+    background: rgba(0,255,0,0.6);
+    width: 50%;
+    padding: 15px;
+    text-align: center;
+    margin: 0px auto;
+    border-radius: 20px;
+    color: #fff;
+    text-shadow: 0px 0px 3px #000;
+}
+
+.send-error {
+    background: rgba(255,0,0,0.6);
+    width: 50%;
+    padding: 15px;
+    text-align: center;
+    margin: 0px auto;
+    border-radius: 20px;
+    color: #fff;
+    text-shadow: 0px 0px 3px #000;
+}
