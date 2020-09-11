@@ -6,7 +6,6 @@
     justify-content: space-around;
     padding-bottom: 80px;
     background: transparent;
-    height: 55%;
 }
 
 .contact__form {
@@ -18,39 +17,12 @@
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-}
-
-.contact__oneItem {
-    background: $white;
-    padding: 10px 35px;
-    border-radius: 20px;
-    margin-bottom: 55px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    a {
-        color: $darkGray;
-    }
-}
-
-.contact__icon {
-    color: $lightRed;
-    font-size: 28px;
-    margin-right: 10px;
-}
-
-.contact__text {
-    font-size: 18px;
-    font-weight: 500;
 }
 
 footer {

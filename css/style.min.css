@@ -853,103 +853,39 @@ header {
   justify-content: space-around;
   padding-bottom: 80px;
   background: transparent;
+  height: 55%;
 }
 
 .contact__form {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.form {
-  margin: 3rem auto;
-  font-family: "Poppins";
-  max-width: 40rem;
-}
-
-.form .form-row {
-  margin-bottom: 1rem;
-}
-
-.form .form-row:last-child {
-  margin-bottom: 0;
-}
-
-.form input {
-  font-family: "Poppins";
-  padding: 0.8rem;
-  border: 0;
-  display: block;
-  width: 100%;
-  color: #666;
-  border-radius: 10px;
+.contact__oneItem {
   background: #EDF2F4;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.075);
-  margin-bottom: 35px;
+  padding: 10px 35px;
+  border-radius: 20px;
+  margin-bottom: 55px;
+  display: flex;
+  align-items: center;
 }
 
-.form textarea {
-  font-family: "Poppins";
-  padding: 0.8rem;
-  display: block;
-  border: 0;
-  width: 100%;
-  color: #666;
-  height: 10rem;
-  resize: none;
-  max-height: 350px;
-  border-radius: 10px;
-  background: #EDF2F4;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.075);
+.contact__oneItem a {
+  color: #2B2D42;
 }
 
-.form label {
-  display: none;
+.contact__icon {
+  color: #EF233C;
+  font-size: 28px;
+  margin-right: 10px;
 }
 
-.form .submit-btn {
-  font-family: "Poppins";
-  padding: 10px 45px;
-  cursor: pointer;
-  background: #EF233C;
-  color: #EDF2F4;
-  border: 0;
-  border-radius: 10px;
-  font-size: 1.1rem;
+.contact__text {
+  font-size: 18px;
   font-weight: 500;
-  transition: all 0.2s ease-in-out;
-}
-
-.form .submit-btn:hover {
-  background: rgba(239, 35, 60, 0.8);
-  cursor: pointer;
-}
-
-.form input.field-error {
-  border-color: tomato;
-  outline: none;
-  box-shadow: 0 0 0 2px rgba(255, 99, 71, 0.3);
-}
-
-.form textarea.field-error {
-  border-color: tomato;
-  outline: none;
-  box-shadow: 0 0 0 2px rgba(255, 99, 71, 0.3);
-}
-
-.form-error-text {
-  color: tomato;
-  font-size: 0.8rem;
-  margin-top: 5px;
-}
-
-.form-error-inline .form-error-text {
-  display: none;
-}
-
-@media screen and (max-width: 500px) {
-  .form .submit-btn {
-    display: block;
-    width: 100%;
-  }
 }
 
 footer {
@@ -969,28 +905,6 @@ footer .fa-heart {
 footer .fa-mug-hot {
   color: #cfa186;
   margin: 0px 5px;
-}
-
-.form-send-success {
-  background: rgba(0, 255, 0, 0.6);
-  width: 50%;
-  padding: 15px;
-  text-align: center;
-  margin: 0px auto;
-  border-radius: 20px;
-  color: #fff;
-  text-shadow: 0px 0px 3px #000;
-}
-
-.send-error {
-  background: rgba(255, 0, 0, 0.6);
-  width: 50%;
-  padding: 15px;
-  text-align: center;
-  margin: 0px auto;
-  border-radius: 20px;
-  color: #fff;
-  text-shadow: 0px 0px 3px #000;
 }
 
 @media (max-width: 1300px) {

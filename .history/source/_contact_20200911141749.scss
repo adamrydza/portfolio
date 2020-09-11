@@ -6,7 +6,6 @@
     justify-content: space-around;
     padding-bottom: 80px;
     background: transparent;
-    height: 55%;
 }
 
 .contact__form {
@@ -30,13 +29,7 @@
     background: $white;
     padding: 10px 35px;
     border-radius: 20px;
-    margin-bottom: 55px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    margin-bottom: 25px;
     a {
         color: $darkGray;
     }
@@ -44,13 +37,7 @@
 
 .contact__icon {
     color: $lightRed;
-    font-size: 28px;
-    margin-right: 10px;
-}
-
-.contact__text {
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 20px;
 }
 
 footer {
