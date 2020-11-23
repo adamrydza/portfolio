@@ -628,79 +628,81 @@ header {
   font-weight: 500 !important;
 }
 
-.portfolio__content {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.portfolio__image {
-  width: 400px;
-  margin-bottom: 50px;
-}
-
-.portfolio__imageInformation {
-  position: relative;
+.offer__moreContent {
+  width: 100%;
+  height: auto;
+  margin: 50px 0px 75px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -262px;
-  width: 350px;
-  height: 158px;
-  padding: 25px;
-  background: rgba(43, 45, 66, 0.8);
-  color: #EDF2F4;
-  opacity: 0;
-  transition: all 0.3s ease-in-out;
+  flex-direction: column;
+}
+
+.offer__moreOne {
+  width: 70%;
+  margin-bottom: 100px;
+}
+
+.offer__moreOne:last-child {
+  margin-bottom: 0;
+}
+
+.offer__moreTitle {
+  color: #2B2D42;
+  font-size: 26px;
   margin-bottom: 50px;
+  font-weight: 500;
 }
 
-.portfolio__imageInformation:hover {
-  opacity: 1;
+.offer__moreTitle .fa-code,
+.offer__moreTitle .fa-object-group,
+.offer__moreTitle .fa-photo-video,
+.offer__moreTitle .fa-headset {
+  color: #EF233C;
+  font-size: 24px;
+  margin-right: 10px;
 }
 
-.portfolio__imageInformation button {
-  border: 0;
-  padding: 12px 35px;
-  border-radius: 20px;
-  font-weight: 600;
-  font-size: 15px;
-  color: #EDF2F4;
-  background: #EF233C;
-  transition: all 0.2s ease-in-out;
-}
-
-.portfolio__imageInformation button:hover {
-  background: rgba(239, 35, 60, 0.8);
-  cursor: pointer;
-}
-
-.portfolio__buttonBox {
+.offer__moreText {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-.portfolio__button {
-  margin-top: 75px;
-  border: 0;
-  padding: 12px 35px;
-  border-radius: 20px;
-  font-weight: 600;
-  font-size: 15px;
-  color: #EDF2F4;
-  background: #EF233C;
-  transition: all 0.2s ease-in-out;
+.offer__moreDescription {
+  width: 100%;
+  display: flex;
 }
 
-.portfolio__button:hover {
-  background: rgba(239, 35, 60, 0.8);
-  cursor: pointer;
+.offer__moreDescriptionTitle {
+  color: #EF233C;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 25px;
 }
 
-@media (max-width: 1300px) {
-  .contact-sec__socialOne {
-    padding-left: 100px;
-  }
+.offer__moreDescriptionInfo {
+  font-size: 17px;
+}
+
+.offer__moreDescriptionInfo div {
+  margin-bottom: 15px;
+}
+
+.offer__moreDescriptionInfo div:last-child {
+  margin-bottom: 0;
+}
+
+.offer__moreDescriptionInfo div .fa-check-circle {
+  color: green;
+}
+
+.offer__moreDescriptionInfo div .fa-times-circle {
+  color: #EF233C;
+}
+
+.offer__morePriceList {
+  margin-left: 200px;
 }
 
 @media (max-width: 780px) {
@@ -716,20 +718,6 @@ header {
   }
   .header__navItemBox {
     display: none;
-  }
-  .portfolio__one {
-    margin: 0px auto 45px auto;
-    text-align: center;
-  }
-  .portfolio__image {
-    width: 300px;
-    margin-bottom: 25px;
-  }
-  .portfolio__imageInformation {
-    width: 250px;
-    height: 120px;
-    margin-top: -184px;
-    margin-bottom: 25px;
   }
 }
 /*# sourceMappingURL=style.min.css.map */

@@ -1,13 +1,13 @@
 /**
- * Swiper 6.2.0
+ * Swiper 6.3.5
  * Most modern mobile touch slider and framework with hardware accelerated transitions
- * http://swiperjs.com
+ * https://swiperjs.com
  *
  * Copyright 2014-2020 Vladimir Kharlampidi
  *
  * Released under the MIT License
  *
- * Released on: September 4, 2020
+ * Released on: October 30, 2020
  */
 
  @font-face {
@@ -17,7 +17,7 @@
     font-style: normal;
   }
   :root {
-    --swiper-theme-color: #EF233C;
+    --swiper-theme-color: #007aff;
   }
   .swiper-container {
     margin-left: auto;

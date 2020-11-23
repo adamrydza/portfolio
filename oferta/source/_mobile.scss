@@ -1,0 +1,19 @@
+@media(max-width: 1300px) {}
+
+@media(max-width: 780px) {
+    .header__navLogoBox {
+        padding-left: 30px;
+        span {
+            display: none;
+        }
+    }
+
+    .hamburger {
+        display: inline-block;
+        padding-right: 30px;
+    }
+
+    .header__navItemBox {
+        display: none;
+    }
+}

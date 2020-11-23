@@ -747,14 +747,17 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -212px;
+  flex-direction: column;
+  margin-top: -208px;
   width: 350px;
   height: 158px;
   padding: 25px;
-  background: rgba(43, 45, 66, 0.8);
+  background: rgba(43, 45, 66, 0.85);
   color: #EDF2F4;
   opacity: 0;
   transition: all 0.3s ease-in-out;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .portfolio__imageInformation:hover {
@@ -764,6 +767,7 @@ header {
 .portfolio__imageInformation button {
   border: 0;
   padding: 12px 35px;
+  margin-top: 25px;
   border-radius: 20px;
   font-weight: 600;
   font-size: 15px;
@@ -984,8 +988,9 @@ footer .fa-mug-hot {
   }
   .portfolio__imageInformation {
     width: 250px;
-    height: 120px;
-    margin-top: -160px;
+    height: 105px;
+    margin-top: -155px;
+    font-size: 16px;
   }
   .clients__text {
     width: 300px;
